@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+}
+
+.gradient-text {
+  font-weight: bold;
+  font-size: 80px;
+  /* Fallback: Set a background color. */
+  background-color: #1fa2ff;
+
+  /* Create the gradient. */
+  background: linear-gradient(90deg, #8e54e9 0%, #1fa2ff 100%);
+
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  margin-bottom: -10px;
+  margin-top: 10vh;
+}
+
+.subtitle {
+  color: #909090;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.screenshot {
+  margin: auto;
+  width: 50%;
+  height: auto;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
+}
+
+.cta-btn {
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  width: 250px;
+  padding: 15px;
+  font-size: 20px;
+  color: white;
+  outline: none;
+  border: none;
+  margin-bottom: 40px;
+
+  background-color: #1fa2ff;
+
+  /* Create the gradient. */
+  background: linear-gradient(90deg, #8e54e9 -20.21%, #1fa2ff 116.72%);
+  border-radius: 30px;
+}
+
+.zenlogo-bottom {
+  margin: 40px auto;
+  text-align: center;
+  width: 50px;
+  display: block;
+}
+
+
+@media (max-width: 425px) {
+  .gradient-text {
+    font-size: 60px;
+  }
+
+  .screenshot {
+    width: 90%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .screenshot {
+    width: 40%;
+  }
+}
