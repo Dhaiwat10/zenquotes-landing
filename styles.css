@@ -96,6 +96,10 @@ body {
   }
 }
 
+.ph-container {
+  margin-top: 40px;
+}
+
 @media (max-width: 425px) {
   .gradient-text {
     font-size: 60px;
